@@ -37,7 +37,7 @@ function CheckBox() {
         type="checkBox"
         name="all"
         onChange={changeInput}
-        checked={data.filter((item) => item.isChk !== true).length < 1} // 체크된게 0개이면 체크 빼기
+        checked={data.filter((item) => item.isChk !== true).length < 1} // 체크된게 1개 이하면 '전체동의'에서 체크 빼기
       />
       <label> 전체 동의 </label>
       <hr />
